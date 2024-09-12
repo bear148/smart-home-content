@@ -1,0 +1,15 @@
+#showcase {
+    width: 60%;
+}
+
+section img {
+    width: 256px;
+}
+
+.logo {
+    width: 2em;
+}
+
+footer section {
+    display: flex;
+}
