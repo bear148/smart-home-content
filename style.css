@@ -1,5 +1,62 @@
+body {
+    margin: 0px;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header > nav {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: rgb(107, 107, 107);
+}
+
+.page-header {
+    padding: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display';
+    font-size: 4em;
+    font-weight: lighter;
+    color: white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+#nav-link-home {
+    width: 2rem;
+}
+
+.nav-link {
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    transition-duration: 300ms;
+    transition-property: color, background-color;
+    transition-timing-function: ease;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.bar-text {
+    background-color: rgb(107, 107, 107);
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+}
+
 #showcase {
-    width: 60%;
+    position: static;
+    width: 100%;
 }
 
 section img {
