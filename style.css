@@ -1,72 +1,162 @@
-body {
-    margin: 0px;
+* {
+    font-family: 'Playfair Display'; /* Default font face */
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-gray: rgba(55, 55, 55, 1);
+    --medium-gray:rgba(85, 85, 85, 1);
+    --gray:rgba(105, 105, 105, 1);
+    --light-gray: rgb(160, 160, 160);
+    --background: rgb(240, 240, 240);
+    --button: rgb(160, 160, 200);
+}
+
+p, figcaption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home {
+    margin: 0;
+}
+
+#home #page-title {
+    background-image: url("/images/housephoto.png");
 }
 
 header {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-header > nav {
     position: sticky;
     top: 0;
-    text-align: center;
-    background-color: rgb(107, 107, 107);
+    background-color: var(--dark-gray);
+    z-index: 6969; /* Make sure header is on top */
 }
 
-.page-header {
-    padding: 0.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Playfair Display';
-    font-size: 4em;
-    font-weight: lighter;
-    color: white;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+.flex-parent {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-#nav-link-home {
-    width: 2rem;
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
 }
 
 .nav-link {
-    font-weight: lighter;
-    color: white;
     text-decoration: none;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    transition-duration: 300ms;
-    transition-property: color, background-color;
-    transition-timing-function: ease;
+    color: white;
 }
 
-.nav-link:hover {
-    color: blue;
+.nav-link.activated {
+    color: var(--light-gray);
 }
 
-.bar-text {
-    background-color: rgb(107, 107, 107);
-    margin: 0;
-    padding: 10px 0px 10px 0px;
+#page-title {
+    display: flex;
+    height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page-title h1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
 }
 
 #showcase {
-    position: static;
     width: 100%;
 }
 
-section img {
-    width: 256px;
+#content {
+    background-color: var(--background);
+    min-height: 0vh;
 }
 
-.logo {
-    width: 2em;
-}
-
-footer section {
+.bar {
     display: flex;
+    flex-flow: row wrap;
+    background-color: var(--dark-gray);
+    color: white;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.bar h4 {
+    font-size: 1.75rem;
+    width: 30%;
+    padding-left: 25px;
+}
+
+.bar p {
+    text-indent: 50px;
+    width: 65%;
+}
+
+#footer {
+    color: white;
+    min-height: 25vh;
+    padding: 5px;
+    background-color: var(--dark-gray);
+    font-size: x-large;
+}
+
+#footer a {
+    color: white;
+}
+
+.cards {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.cards figure {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--gray);
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: var(--gray) 2px 2px 10px;
+}
+
+.cards figure > figcaption {
+    text-indent: 50px;
+    padding-top: 5px;
+    color: white;
+}
+
+.card-img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button {
+    align-self: flex-end;
+    background-color: var(--button);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
 }

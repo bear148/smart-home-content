@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/house.svg">
     <title>Smart Homes! : Extra</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home">
     <header>
-        <nav>
-            <a class="nav-link" href="/index.html"><img id="nav-link-home" src="/images/house.svg"></a>
-            <a class="nav-link" href="safety.html">Safety Ammenities</a>
-            <a class="nav-link" href="convenience.html">Convenience Ammenities</a>
-            <a class="nav-link" href="extra.html">Extra Ammenities & Info</a>
+        <nav class="nav-bar">
+            <ul class="flex-parent">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="safety.html">Safety Ammenities</a></li>
+                <li><a class="nav-link" href="convenience.html">Convenience Ammenities</a></li>
+                <li><a class="nav-link activated" href="extra.html">Extra Ammenities</a></li>
+            </ul>
         </nav>
-        <h1>Extra Ammenities and Info</h1>
     </header>
-    <hr>
+    <section id="page-title" class="flex-parent">
+        <h1>Extra</h1>
+    </section>
     <main>
         <article>
-            <p>Although we've already implemented plenty of convience and safety features, we do have some extra features that should hopefully make your life in our houses more enjoyable overall by adding some nice little things.</p>
+            <section class="flex-parent bar">
+                <p>Although we've already implemented plenty of convience and safety features, we do have some extra features that should hopefully make your life in our houses more enjoyable overall by adding some nice little things.</p>
+            </section>
             <section>
                 <h3>Ammenity List</h3>
                 <p>Here is a comprehensive list and description for all of the extra ammenities we include:</p>

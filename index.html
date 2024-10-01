@@ -8,40 +8,47 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home">
     <header>
-        <nav>
-            <a class="nav-link" href="/index.html"><img id="nav-link-home" src="/images/house.svg"></a>
-            <a class="nav-link" href="safety.html">Safety Ammenities</a>
-            <a class="nav-link" href="convenience.html">Convenience Ammenities</a>
-            <a class="nav-link" href="extra.html">Extra Ammenities & Info</a>
+        <nav class="nav-bar">
+            <ul class="flex-parent">
+                <li><a class="nav-link activated" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="safety.html">Safety Ammenities</a></li>
+                <li><a class="nav-link" href="convenience.html">Convenience Ammenities</a></li>
+                <li><a class="nav-link" href="extra.html">Extra Ammenities</a></li>
+            </ul>
         </nav>
-        <h1 class="page-header">SmartHomes Inc.</h1>
-        <img id="showcase" src="/images/housephoto.png">
     </header>
-    <main>
+    <section id="page-title" class="flex-parent">
+        <h1>SmartHomes Inc.</h1>
+    </section>
+    <main id="content">
         <article>
-            <p class="bar-text">Have you ever wanted to live in a home where practically everything was done for you, and you never had to worry about your boring old responsibilities again? Well you're in luck! We are offering smart homes that will do practically <em>everything</em> for you! These house come with a whole suite of technology that helps with no just daily tasks, but home security, efficiency, and so much more.</p>
-            <section>
-                <h3>Some of our features:</h3>
+            <section class="flex-parent bar">
+                <h4>Our Mission</h4>
+                <p>Have you ever wanted to live in a home where everything was done for you, and you never had to worry about your boring old responsibilities again? Well you're in luck! We are offering smart homes that will do practically <em>everything</em> for you! These house comes with a whole suite of technology that helps with not just daily tasks, but home security, efficiency, and so much more.</p>
+            </section>
+            <section class="cards">
                 <figure>
-                    <img src="/images/smartstove.png" alt="Smart Stove">
-                    <figcaption>A Smart Stove that will make all your meals for you!</figcaption>
+                    <img src="/images/smartstove.png" alt="Smart Stove" class="card-img">
+                    <figcaption>A Smart Stove that will make all your meals for you! No more worrying about cooking.</figcaption>
+                    <a href="/convenience.html" class="button">Read More!</a>
                 </figure>
                 <figure>
-                    <img src="/images/roboticmice.png" alt="Cleaning Mice">
+                    <img src="/images/roboticmice.png" alt="Cleaning Mice" class="card-img">
                     <figcaption>Mice that will scatter around your house and clean all those hard to reach places.</figcaption>
+                    <a href="/extra.html" class="button">Read More!</a>
                 </figure>
                 <figure>
-                    <img src="/images/cigardispense.png" alt="Cigar Dispenser">
-                    <figcaption>A cigar dispenser for relaxing after a long day of work.</figcaption>
+                    <img src="/images/cigardispense.png" alt="Cigar Dispenser" class="card-img">
+                    <figcaption>A pre-lit cigar dispenser for relaxing after a long day of work. No more pesky lighters!</figcaption>
+                    <a href="/extra.html" class="button">Read More!</a>
                 </figure>
             </section>
-            <p>All in all, our smart houses aim to cram as much technology into each individual house as possible, so that we can make your living easier. Our houses include ammenities such as, automatic dish handling so you no longer have to worry about those dirty dishes, automatic stove that cooks and portions all the food you'll need for each meal of the day, mice that are automatically deployed to clean, a garage with a car that automatically start and open when you need to leave for the day, and that is only to mention a few things. The house is also very spacious and comes with a floor above the 1st floor, and even a cellar that includes an incinerator for any trash. The house in it's entirety is built with the buyer's time in mind, and unlike many other houses, not only do our homes provide you with a roof, but they actually care for you physically.</p>
+            <!--<p>All in all, our smart houses aim to cram as much technology into each individual house as possible, so that we can make your living easier. Our houses include ammenities such as, automatic dish handling so you no longer have to worry about those dirty dishes, automatic stove that cooks and portions all the food you'll need for each meal of the day, mice that are automatically deployed to clean, a garage with a car that automatically start and open when you need to leave for the day, and that is only to mention a few things. The house is also very spacious and comes with a floor above the 1st floor, and even a cellar that includes an incinerator for any trash. The house in it's entirety is built with the buyer's time in mind, and unlike many other houses, not only do our homes provide you with a roof, but they actually care for you physically.</p>-->
         </article>
     </main>
-    <hr>
-    <footer>
+    <footer id="footer">
         <address>
             <small>
                 Smart Houses Inc. <br>
