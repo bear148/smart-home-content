@@ -1,6 +1,7 @@
 * {
     font-family: 'Playfair Display'; /* Default font face */
     box-sizing: border-box;
+    font-weight: 1;
 }
 
 :root {
@@ -13,7 +14,7 @@
     --button: rgb(160, 160, 200);
 }
 
-p, figcaption, em, strong, q, a {
+p, figcaption, em, strong, q, a, address {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -139,9 +140,11 @@ figcaption {
 
 .cards {
     max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 
 .six-grid {
@@ -157,7 +160,9 @@ figcaption {
     flex-basis: 25%;
 }
 
-.cards > figure {
+.cards figure {
+    display: flex;
+    flex-flow: column wrap;
     background-color: var(--gray);
     width: 30%;
     padding: 0.5rem;
@@ -194,35 +199,43 @@ figcaption {
     background-color: var(--dark-gray);
 }
 
-/*
 .row {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2em;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    height: 75%;
-} */
+    justify-content: space-evenly;
+}
+
+.stacked {
+    flex-direction: column;
+}
 
 .row article {
-    width:50%;
+    width: 50%;
 }
 
 .row article img.card-img {
-    max-width: 80%
+    width: 100%
+}
+
+.row article p {
+    text-indent: 50px;
+    padding-left: 5px;
+    color: white;
+    font-size: 1rem;
 }
 
 .row-card {
     display: flex;
-    margin: 2rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+    flex-flow: row wrap;
     background-color: var(--gray);
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: var(--gray) 2px 2px 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
