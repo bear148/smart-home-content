@@ -205,6 +205,7 @@ figcaption {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-content: space-evenly;
 }
 
 .stacked {
@@ -238,4 +239,8 @@ figcaption {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+}
+
+.rev {
+    flex-flow: row-reverse wrap;
 }
