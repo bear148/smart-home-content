@@ -42,6 +42,7 @@ address {
 }
 
 header {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
     position: sticky;
     top: 0;
     background-color: var(--dark-gray);
