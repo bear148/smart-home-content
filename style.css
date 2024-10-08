@@ -297,7 +297,7 @@ article p {
     padding-left: 5px;
     color: white;
 }
-
+/* 300 Lines yay */
 .row-card {
     display: flex;
     flex-flow: row wrap;
@@ -321,11 +321,8 @@ article p {
     background-color: var(--medium-gray);
 }
 
-/* 300 Lines yay */
-
 /* 
-So I can just add this class and to justify the descriptions of different cards, specifically
-on pages where the cards content is a row not a column.
+These classes are to make the formatting of different grids easier.
 */
 .center {
     align-self: center;
