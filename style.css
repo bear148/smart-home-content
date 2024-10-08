@@ -10,12 +10,26 @@
     --gray:rgba(105, 105, 105, 1);
     --leastlight-gray:rgb(130, 130, 130);
     --light-gray: rgb(160, 160, 160);
-    --background: rgb(240, 240, 240);
-    --button: rgb(160, 160, 200);
+    --background: rgb(200, 200, 200);
+    --button: rgb(65, 65, 65);
 }
 
 p, figcaption, em, strong, q, a, address {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.body-link:hover {
+    color: var(--dark-gray);
+}
+
+address {
+    font-style: normal;
+    font-weight: lighter;
 }
 
 #home {
@@ -30,7 +44,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--dark-gray);
-    z-index: 6969; /* Make sure header is on top */
+    z-index: 1000; /* Make sure header is on top */
 }
 
 .flex-parent {
@@ -46,10 +60,12 @@ header {
 ul {
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 ul li {
     padding: 10px;
+    width: 20%;
 }
 
 figcaption {
@@ -70,11 +86,11 @@ figcaption {
 }
 
 .nav-link.activated {
-    color: var(--light-gray);
+    color: var(--gray);
 }
 
 .nav-link.activated:hover {
-    color: var(--gray);
+    color: var(--light-gray);
 }
 
 #page-title {
@@ -119,6 +135,7 @@ figcaption {
 .bar h4 {
     font-size: 1.75rem;
     width: 30%;
+    text-align: center;
 }
 
 .bar p {
@@ -138,24 +155,21 @@ figcaption {
     width: 17%;
     height: 7px;
     background: rgba(204, 186, 174, 0.17);
-    left: 0;
+    left: 45%;
 }
 
 #footer {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
-    align-content: space-evenly;
+    align-content: center;
     align-items: center;
     color: white;
     min-height: 25vh;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: var(--dark-gray);
     font-size: x-large;
-}
-
-#footer address {
-    padding-left: 50px;
 }
 
 #footer a {
@@ -305,4 +319,16 @@ on pages where the cards content is a row not a column.
 */
 .center {
     align-self: center;
+}
+
+.column {
+    flex-flow: column wrap;
+}
+
+.logo {
+    flex-shrink: 1;
+}
+
+.logo img {
+    max-height: 127.2px;
 }

@@ -1,2 +1,3 @@
 Each HTML file includes the semantic elements: ```<nav>```, ```<main>```, ```<footer>```, ```<header>```, ```<section>```, ```<article>```. 
 Each category has a minimum of 3 ammenities all with pictures and product descriptions.
+## The commit named "gfd" is when I begin styling. It is called "gfd" because we were leaving and I needed to quickly commit and push the code so I just put 3 random letters as the commit message
