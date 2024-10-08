@@ -34,6 +34,7 @@ address {
 
 #home {
     margin: 0;
+    background-color: var(--background);
 }
 
 #home #page-title {
@@ -68,7 +69,7 @@ ul li {
     width: 20%;
 }
 
-figcaption {
+article p {
     font-size: 0.9rem;
 }
 
@@ -119,6 +120,7 @@ figcaption {
 
 #content {
     background-color: var(--background);
+    height: 100%;
 }
 
 .bar {
@@ -167,6 +169,7 @@ figcaption {
     color: white;
     min-height: 25vh;
     padding-top: 5px;
+    margin-top: 2rem;
     padding-bottom: 5px;
     background-color: var(--dark-gray);
     font-size: x-large;
@@ -198,11 +201,12 @@ figcaption {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: space-evenly;
+    margin-top: 2rem;
 }
 
-.cards figure {
+.cards article {
     display: flex;
     flex-flow: column wrap;
     background-color: var(--gray);
@@ -212,7 +216,7 @@ figcaption {
     box-shadow: var(--gray) 2px 2px 10px;
 }
 
-.cards figure.color-break {
+.cards article.color-break {
     background-color: var(--leastlight-gray);
 }
 
@@ -223,13 +227,20 @@ figcaption {
     justify-content: space-around;
 }
 
-.six-grid > figure {
+.six-grid > article {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 25%;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
-.cards > figure > figcaption {
+.split {
+    margin-top: 2rem;
+}
+
+.cards > article > p {
     text-indent: 50px;
     padding-top: 5px;
     color: white;
@@ -269,6 +280,7 @@ figcaption {
 }
 
 .stacked {
+    margin-top: 2rem;
     flex-direction: column;
 }
 
@@ -284,7 +296,6 @@ figcaption {
     text-indent: 50px;
     padding-left: 5px;
     color: white;
-    font-size: 1rem;
 }
 
 .row-card {
@@ -295,12 +306,11 @@ figcaption {
     border-radius: 5px;
     width: 60%;
     box-shadow: var(--gray) 2px 2px 10px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
     justify-content: space-evenly;
     align-content: space-evenly;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .rev {
@@ -331,4 +341,18 @@ on pages where the cards content is a row not a column.
 
 .logo img {
     max-height: 127.2px;
+}
+
+.end {
+    margin-bottom: 0;
+}
+
+.top-row {
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.bottom-row-grid {
+    margin-bottom: 0;
 }
