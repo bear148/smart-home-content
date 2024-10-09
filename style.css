@@ -105,12 +105,12 @@ article p {
 }
 
 #page-title h1 {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.45);
     font-size: 2rem;
     padding: 10px;
     border-radius: 15px;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 100;
 }
 
