@@ -295,11 +295,11 @@ article p {
     flex-direction: column;
 }
 
-.row article {
+.row article, .row div {
     width: 50%;
 }
 
-.row article img.card-img {
+.row div img.card-img {
     width: 100%
 }
 
