@@ -1,7 +1,6 @@
 * {
     font-family: 'Playfair Display'; /* Default font face */
     box-sizing: content-box;
-    font-weight: 1;
 }
 
 :root {
@@ -221,6 +220,18 @@ article p {
     background-color: var(--leastlight-gray);
 }
 
+.card-title, .item-title, .row-item-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.row-item-title {
+    padding-left: 1rem;
+}
+
 .six-grid {
     max-width: 1280px;
     margin: 0 auto;
@@ -243,7 +254,6 @@ article p {
 
 .cards > article > p {
     text-indent: 50px;
-    padding-top: 5px;
     color: white;
 }
 
@@ -295,7 +305,7 @@ article p {
 
 .row article p {
     text-indent: 50px;
-    padding-left: 5px;
+    padding-left: 1rem;
     color: white;
 }
 /* 300 Lines yay */
