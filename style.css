@@ -15,6 +15,7 @@
 
 p, figcaption, em, strong, q, a, address {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
 }
 
 .body-link {
@@ -70,7 +71,7 @@ ul li {
 }
 
 article p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .nav-link {
@@ -80,6 +81,7 @@ article p {
     transition-duration: 300ms;
     transition-property: color;
     transition-timing-function: ease;
+    font-size: 1.25rem;
 }
 
 .nav-link:hover {
@@ -137,7 +139,7 @@ article p {
 .bar h4 {
     font-size: 1.75rem;
     width: 30%;
-    text-align: center;
+    text-align: left;
 }
 
 .bar p {
@@ -157,7 +159,7 @@ article p {
     width: 17%;
     height: 7px;
     background: rgba(204, 186, 174, 0.17);
-    left: 45%;
+    left: 25%;
 }
 
 #footer {
@@ -183,6 +185,15 @@ article p {
     margin: 0;
     font-size: xx-large;
     font-style: normal;
+    text-align: center;
+}
+
+#footer .contact, #footer section, #footer .logo, #footer-name {
+    width: 30%;
+}
+
+#logo-img {
+    max-width: 199px;
 }
 
 .contact {
@@ -346,10 +357,6 @@ These classes are to make the formatting of different grids easier.
     flex-shrink: 1;
 }
 
-.logo img {
-    max-height: 127.2px;
-}
-
 .end {
     margin-bottom: 0;
 }
@@ -370,4 +377,35 @@ These classes are to make the formatting of different grids easier.
 
 .std-margin-bottom {
     margin-bottom: 2rem;
+}
+
+.card-align {
+    max-width: 1280px;
+    justify-content: space-between;
+}
+
+.card-align-header {
+    padding-left: 1.75rem;
+}
+
+.extra-align-header {
+    padding-left: 1.5rem;
+}
+
+
+.card-align p {
+    padding-right: 1rem;
+}
+
+.padding-exclude {
+    padding: 0;
+    margin: 0;
+}
+
+.larger {
+    width: 65% !important;
+}
+
+.extra-align {
+    max-width: 848px;
 }
