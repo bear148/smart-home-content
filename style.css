@@ -320,7 +320,6 @@ article p {
     justify-content: space-evenly;
     align-content: space-evenly;
     margin-left: 2rem;
-    margin-right: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -363,4 +362,8 @@ These classes are to make the formatting of different grids easier.
 
 .bottom-row-grid {
     margin-bottom: 0;
+}
+
+.margin {
+    margin-right: 2rem;
 }
