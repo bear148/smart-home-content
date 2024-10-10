@@ -367,3 +367,7 @@ These classes are to make the formatting of different grids easier.
 .margin {
     margin-right: 2rem;
 }
+
+.std-margin-bottom {
+    margin-bottom: 2rem;
+}
