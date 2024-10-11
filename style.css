@@ -437,3 +437,15 @@ These classes are to make the formatting of different grids easier.
 .font-large {
     font-size: 1.75rem;
 }
+
+article.no-left-margin {
+    margin-left: 0;
+}
+
+article.no-right-margin {
+    margin-right: 0;
+}
+
+article.no-top-margin {
+    margin-top: 0;
+}
