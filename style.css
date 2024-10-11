@@ -162,6 +162,21 @@ article p {
     left: 25%;
 }
 
+.border-bottom-right {
+    position: relative;
+    left: 0;
+}
+
+.border-bottom-right::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    width: 17%;
+    height: 7px;
+    background: rgba(204, 186, 174, 0.17);
+    left: 50%;
+}
+
 #footer {
     display: flex;
     flex-flow: row;
