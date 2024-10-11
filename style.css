@@ -404,25 +404,20 @@ These classes are to make the formatting of different grids easier.
 }
 
 .card-align-header {
-    padding-left: 1.75rem;
+    padding-left: 2rem;
 }
 
-.extra-align-header {
-    padding-left: 1.5rem;
+.p-align {
+    padding-right: 2rem;
 }
-
 
 .card-align p {
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 .padding-exclude {
     padding: 0;
     margin: 0;
-}
-
-.extra-align {
-    max-width: 848px;
 }
 
 .cards.vertical {
