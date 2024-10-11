@@ -409,3 +409,11 @@ These classes are to make the formatting of different grids easier.
 .extra-align {
     max-width: 848px;
 }
+
+.cards.vertical {
+    justify-content: space-evenly;
+}
+
+#contact-info a {
+    font-size: 1.25rem;
+}
