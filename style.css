@@ -13,9 +13,9 @@
     --button: rgb(65, 65, 65);
 }
 
-p, figcaption, em, strong, q, a, address {
+p, figcaption, em, strong, q, a, address, abbr {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .body-link {
@@ -71,7 +71,7 @@ ul li {
 }
 
 article p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .nav-link {
@@ -321,7 +321,8 @@ article p {
 }
 
 .row-card.larger {
-    width: 65%;
+    height: 50%;
+    width: 100%;
 }
 
 .row article, .row div {
@@ -430,4 +431,14 @@ These classes are to make the formatting of different grids easier.
 
 #contact-info a {
     font-size: 1.25rem;
+}
+
+.row-card.stretch {
+    width: auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.font-large {
+    font-size: 1.75rem;
 }
